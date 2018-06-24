@@ -4,6 +4,6 @@
 int main(int argc, char const *argv[]) {
     double n, m, a;
     std::cin >> n >> m >> a;
-    std::cout << int(ceil(n / a)) * int(ceil(m / a)) << std::endl;
+    std::cout << uint64_t(ceil(n / a)) * uint64_t(ceil(m / a)) << std::endl;
     return 0;
 }
