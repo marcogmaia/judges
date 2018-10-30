@@ -9,11 +9,15 @@ if __name__ == '__main__':
     input_file = sys.argv[2]  # testCases file name
 
     def timeit(decorated_function):
-        def wrapper():
+        """Outputs the time that
+        a function takes to run."""
+
+        def wrapper(*args, **kwargs):
             t1 = time.time()
-            decorated_function()
+            decorated_function(*args, **kwargs)
             t2 = time.time()
-            print("Total running time=", t2-t1)
+            print("Total running time=", t2 - t1)
+
         return wrapper
 
     @timeit
@@ -28,5 +32,5 @@ if __name__ == '__main__':
                     universal_newlines=True)
                 output, output_err = process.communicate(line_as_file.read())
                 print(output, end='')
-    
+
     run()
