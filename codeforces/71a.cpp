@@ -1,3 +1,4 @@
+// http://codeforces.com/problemset/problem/71/A
 #include <iostream>
 
 int main(int argc, char const *argv[]) {

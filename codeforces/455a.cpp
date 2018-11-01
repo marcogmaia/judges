@@ -1,3 +1,4 @@
+// http://codeforces.com/problemset/problem/455/A
 #include <iostream>
 
 #define NMAX 100001

@@ -1,3 +1,4 @@
+// http://codeforces.com/problemset/problem/520/B
 #include <iostream>
 
 int solve(int n, int m) {
