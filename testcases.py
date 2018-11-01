@@ -1,3 +1,6 @@
+# this program receives 2 inputs, the executable and a file with the testcases
+# for each line in the testcases file it will run the program and
+# at the end it will time
 import time
 import subprocess
 import sys
