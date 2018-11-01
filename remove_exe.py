@@ -1,10 +1,11 @@
 import os
 
-folderToExclude = 'd:/marco/programming/cpp/judges'
+# cautionary check
+folderToExcludeFrom = 'd:/marco/programming/cpp/judges'
 
 if __name__ == '__main__':
     # Will traverse the current folder downwards looking for a *.exe to exclude
-    if os.path.dirname(__file__) == folderToExclude:
+    if os.path.dirname(__file__) == folderToExcludeFrom:
         for root, dirs, files in os.walk('.'):
             for file in files:
                 if file.endswith(".exe"):
