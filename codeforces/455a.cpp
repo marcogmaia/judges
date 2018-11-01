@@ -16,8 +16,8 @@ int main(int argc, char const *argv[]) {
         ++cnt[i];
     }
 
-    dp[0]             = 0;
-    dp[1]             = cnt[1];
+    dp[0] = 0;
+    dp[1] = cnt[1];
     long long maximum = -1;
     for(long long i = 2; i < NMAX; ++i) {
         // see if the previous has more points than the actual calculation
