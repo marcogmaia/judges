@@ -1,3 +1,3 @@
 # judges
 
-Repository of my solutions to problems in these online judges websites.
+Some of my solutions to problems in these online judges.
