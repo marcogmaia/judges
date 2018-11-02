@@ -2,25 +2,26 @@
 #include <iostream>
 
 int main(int argc, char const *argv[]) {
+    // try to use pair instead of a struct
     struct Tree {
         int xi;
         int hi;
     };
 
-    int t;
+    int ntotal;
     int xi, hi;
-    std::cin >> t;
+    std::cin >> ntotal;
 
-    Tree *v = new Tree[t];
+    Tree *v = new Tree[ntotal];
 
-    for(int i = 0; i < t; ++i) {
+    for(int i = 0; i < ntotal; ++i) {
         std::cin >> xi >> hi;
         v[i] = {xi, hi};
     }
 
     // dp part starts here
     int ans = 0;
-    for(int x1 = INT32_MIN, h1 = 0, i = 0; i<t; ++i) {
+    for(int x1 = INT32_MIN, h1 = 0, i = 0; i<ntotal; ++i) {
         if(v[i].xi <= x1 + h1) {
             --ans;
             h1 = 0;
