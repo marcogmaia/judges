@@ -1,6 +1,6 @@
 // http://codeforces.com/problemset/problem/337/A
-#include <iostream>
 #include <algorithm>
+#include <iostream>
 
 #define NMAX 51
 #define INF 0x3f3f3f3f
@@ -15,14 +15,14 @@ int main(int argc, char const *argv[]) {
 
     for(int i = 0; i < m; ++i)
         std::cin >> v[i];
-    std::sort(v, v+m);
+    std::sort(v, v + m);
 
     int minimum = INF;
 
     for(int i = 0; i <= m - n; ++i)
-        minimum = std::min(v[i+n-1] - v[i], minimum);
+        minimum = std::min(v[i + n - 1] - v[i], minimum);
     std::cout << minimum << std::endl;
 
-    delete[] v;    
+    delete[] v;
     return 0;
 }

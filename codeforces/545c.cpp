@@ -21,7 +21,7 @@ int main(int argc, char const *argv[]) {
 
     // dp part starts here
     int ans = 0;
-    for(int x1 = INT32_MIN, h1 = 0, i = 0; i<ntotal; ++i) {
+    for(int x1 = INT32_MIN, h1 = 0, i = 0; i < ntotal; ++i) {
         if(v[i].xi <= x1 + h1) {
             --ans;
             h1 = 0;
