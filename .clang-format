@@ -11,7 +11,6 @@ BraceWrapping:
     SplitEmptyFunction: false
 BreakBeforeBinaryOperators: All
 PointerAlignment: Right
-#PointerBindsToType: false
 TabWidth: 4
 IndentWidth: 4
 SortIncludes: true
