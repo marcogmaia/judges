@@ -1,6 +1,6 @@
 Language: Cpp
 Standard: Cpp11
-BasedOnStyle: LLVM
+BasedOnStyle: Google
 BreakBeforeBraces: Custom
 BraceWrapping:
     AfterEnum: false
@@ -10,15 +10,21 @@ BraceWrapping:
     BeforeElse: true
     SplitEmptyFunction: false
 BreakBeforeBinaryOperators: All
-PointerAlignment: Right
+BreakBeforeTernaryOperators: true
+BreakConstructorInitializers: BeforeComma
+Cpp11BracedListStyle: true
+PointerAlignment: Left
+PointerBindsToType: true
 TabWidth: 4
 IndentWidth: 4
-SortIncludes: true
+SortIncludes: false
 AccessModifierOffset: -4
 ColumnLimit: 80
-NamespaceIndentation: All
-AlignAfterOpenBracket: DontAlign
+NamespaceIndentation: None
+AlignAfterOpenBracket: Align
 AlignTrailingComments: true
+AlignConsecutiveAssignments: true
+AlignConsecutiveDeclarations: false
 AllowAllParametersOfDeclarationOnNextLine: true
 AlwaysBreakTemplateDeclarations: true
 UseTab: Never
@@ -34,3 +40,5 @@ IncludeBlocks: Regroup
 
 KeepEmptyLinesAtTheStartOfBlocks: false
 MaxEmptyLinesToKeep: 2
+
+ReflowComments: true
